@@ -1,0 +1,19 @@
+<div class="otp-container">
+
+    <h2>OTP Verification</h2>
+
+    <input
+        type="email"
+        placeholder="Enter Email"
+        [(ngModel)]="email">
+
+    <input
+        type="text"
+        placeholder="Enter OTP"
+        [(ngModel)]="otp">
+
+    <button (click)="verifyOTP()">
+        Verify OTP
+    </button>
+
+</div>

@@ -1,0 +1,49 @@
+<div class="container">
+
+<h2>Admin Dashboard</h2>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+<th>Student</th>
+<th>Email</th>
+<th>Company</th>
+<th>Role</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+<tr *ngFor="let app of applications">
+
+<td>{{app.Application_ID}}</td>
+
+<td>{{app.Student}}</td>
+
+<td>{{app.Email}}</td>
+
+<td>{{app.Company}}</td>
+
+<td>{{app.Role}}</td>
+
+<td>{{app.Status}}</td>
+
+<td>
+
+<button (click)="accept(app.Application_ID)">
+Accept
+</button>
+
+<button (click)="reject(app.Application_ID)">
+Reject
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>

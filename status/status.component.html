@@ -1,0 +1,48 @@
+<div class="container">
+
+    <h2>My Internship Applications</h2>
+
+    <table>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Company</th>
+
+            <th>Role</th>
+
+            <th>Resume</th>
+
+            <th>Status</th>
+
+        </tr>
+
+        <tr *ngFor="let app of applications">
+
+            <td>{{app.Application_ID}}</td>
+
+            <td>{{app.Company}}</td>
+
+            <td>{{app.Role}}</td>
+
+            <td>{{app.Resume}}</td>
+
+            <td>
+
+                <span
+                [style.color]="
+                app.Status=='Accepted' ? 'green' :
+                app.Status=='Rejected' ? 'red' : 'orange'">
+
+                {{app.Status}}
+
+                </span>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>

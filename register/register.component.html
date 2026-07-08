@@ -1,0 +1,39 @@
+<div class="register-container">
+
+    <h2>Student Registration</h2>
+
+    <input
+    type="text"
+    placeholder="Full Name"
+    [(ngModel)]="name">
+
+    <input
+    type="email"
+    placeholder="Email"
+    [(ngModel)]="email">
+
+    <input
+    type="text"
+    placeholder="Mobile Number"
+    [(ngModel)]="mobile">
+
+    <input
+    type="password"
+    placeholder="Password"
+    [(ngModel)]="password">
+
+    <button (click)="register()">
+
+        Register
+
+    </button>
+
+    <br><br>
+
+    <a routerLink="/login">
+
+        Already have an account? Login
+
+    </a>
+
+</div>
