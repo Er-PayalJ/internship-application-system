@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#0d6efd;
+    color:white;
+}
+
+.navbar button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:white;
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.welcome{
+    text-align:center;
+    padding:40px;
+}
+
+.welcome h1{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.welcome p{
+    color:#555;
+}
+
+/* Top Cards */
+
+.top-cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin:20px;
+    flex-wrap:wrap;
+}
+
+.info-card{
+    width:250px;
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.info-card h2{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+/* Company Cards */
+
+.company-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin:8px 0;
+}
+
+.card button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0d6efd;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.card button:hover{
+    background:#084298;
+}

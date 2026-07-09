@@ -1,0 +1,62 @@
+<!-- Navbar -->
+<div class="navbar">
+
+    <h2>Internship Application System</h2>
+
+    <button (click)="logout()">Logout</button>
+
+</div>
+
+<!-- Welcome Section -->
+<div class="welcome">
+
+    <h1>Welcome {{studentName || 'Student'}}</h1>
+
+    <p>Select a company and apply for your internship.</p>
+
+</div>
+
+<!-- Dashboard Cards -->
+
+<div class="top-cards">
+
+    <div class="info-card">
+        <h2>{{companies.length}}</h2>
+        <p>Available Companies</p>
+    </div>
+
+    <div class="info-card">
+        <h2>Resume</h2>
+        <p>Upload While Applying</p>
+    </div>
+
+    <div class="info-card">
+        <h2>Email</h2>
+        <p>Notification Enabled</p>
+    </div>
+
+</div>
+
+<!-- Company List -->
+
+<div class="company-container">
+
+    <div class="card" *ngFor="let c of companies">
+
+        <h2>{{c.company_name}}</h2>
+
+        <p><b>Location :</b> {{c.location}}</p>
+
+        <p><b>Role :</b> {{c.internship_role}}</p>
+
+        <p><b>Stipend :</b> ₹{{c.stipend}}</p>
+
+        <button
+        [routerLink]="['/apply']"
+        [queryParams]="{company_id:c.id}">
+        Apply Now
+        </button>
+
+    </div>
+
+</div>
